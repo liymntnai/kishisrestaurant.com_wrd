@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    /* line-height: 2px; */
+}
+header{
+    box-shadow: 0 0 4px #222;
+    padding: 20px;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    justify-content: space-between;
+
+}
+.logo-box{
+position: relative;
+display: flex;
+}
+.kishi{
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kishi p{
+    /* position: absolute;
+    top: 20%;
+    left:50px; */
+    color: gold;
+    font-size: 2.2rem;
+    font-family: "Whisper", cursive;
+    /* margin-left:-2px ; */
+}
+.logo-image{
+    width:60px; 
+    height:30px;
+    border: 50%; 
+}
+.nav,.order-box{
+    padding:5px 20px;
+}
+.nav-items{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #555;
+}
+.nav-items:hover{
+    /* color:gold; */
+    padding-bottom: 3px;
+    border-bottom: 2px solid gold;
+
+}
+.order-food{
+    color:white;
+    border: 1px solid white;
+    background-color: orange;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.order-food:hover{
+    background-color: rgb(255, 136, 0);
+}
+.landing{
+    /* width: 100vw; */
+    /* background-image: url('img/white-hat-chef.jpg'); */
+    background-image: url('img/black-chef.jpg');
+    background-color: #cccccc;
+    height:80vh;
+    background-position: left 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.description{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    color: wheat;
+    font-size: 1.2rem;
+}
+.intro-text{
+    max-width: 290px;
+}
+
+.container{
+ 
+    padding: 60px;
+
+}
+.container1{
+    background-color: #cccccc;
+    height: 500px;
+}
+.container2{
+height: 400px;
+}
+.container3{
+
+}
+.headings{
+    text-align: center;
+    color:rgb(80, 80, 80);
+    font-size: 40px;
+    font-weight: 300;
+    padding: 20px;
+}
+.menu-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.menus{
+
+}
+.menu-heading{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(255, 102, 0);
+}
+.food-images{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+svg{
+    width: 20px;
+
+
+}
+
+.list{
+    font-size: 20px;
+    font-family:'serif';
+    margin: 20px;
+}
+.customer-review{
+    /* width: 100vw; */
+    /* background-image: url('img/white-hat-chef.jpg'); */
+    background-image: url('img/black-chef.jpg');
+    background-color: #cccccc;
+    height:80vh;
+    background-position: left 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+
+footer{
+    height: 300px;
+    background-color: #222;
+}
