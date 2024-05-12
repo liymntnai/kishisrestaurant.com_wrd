@@ -27,7 +27,7 @@
         </div> 
        
 
-        <div class="nav ">
+        <div class="nav">
            
 
             <a href="index.html" class="nav-items">Home</a>
@@ -40,29 +40,75 @@
             <a href="" class="nav-items order-food">Order Food</a>
             <!-- <input type="checkbox" name="" id="check">
             <label for="check"class='checkbtn'> -->
-            <a href="#" id="menu-bar"><i class="fas fa-bars" id="check"></i></a>
+            <!-- <a href="#" id="menu-bar"><i class="fas fa-bars" id="check"></i></a> -->
+            <button id="menu-bar" class="hamburger">
+                <span class="hamburger-top"></span>                
+                <span class="hamburger-middle"></span>                
+                <span class="hamburger-bottom"></span>                
+            </button>
 
         </div>
     
     </header>
 
+    <!-- To view the navbar. It is normally hidden  -->
+    <div class="view-navbar none">
+        <ul>
+            <li><a href="index.html" class="nav-items">Home</a></li>
+            <li><a href="about.html" class="nav-items">About</a></li>
+            <li><a href="gallery.html" class="nav-items">Gallery</a></li>
+    
+            <div class="order-box center">
+                <a href="" class="nav-items nav-order-food">Order Food</a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- ABOUT SECTION -->
     <section class="about">
         <div class="container">
-            <h1 class="lg dark-color fw-300 my- text-center">
+            <h1 class="lg dark-color fw-300 mb-4 text-center">
                 About
             </h1>
-            <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <!-- <p class="text-center my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Ipsa eius maxime similique reiciendis eos nesciunt 
-                temporibus nisi voluptates delectus quo.</p>
-            <div class="image-about flex my-4">
+                temporibus nisi voluptates delectus quo.</p> -->
+           
+            <div class="flex gap-3">
+                <div class="image-about flex">
 
                     <img src="img/eiliv-aceron-wNQoaYCFcsI-unsplash.jpg" class="my-4" alt="">
+                   
+                </div>
+                <div class="description">
+                    <h2 class="description-heading" >Cameroon #1 restaurant for top tradional meals</h2>
+                    <p class="mb-3 lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, doloribus. Modi rerum fugiat illo doloribus omnis perferendis aliquam, magnam animi? Corrupti nam quis repudiandae reprehenderit iusto, illo totam voluptatum exercitationem?</p>
+                    <p class="mb-3 lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, doloribus. Modi rerum fugiat illo doloribus omnis perferendis aliquam, magnam animi? Corrupti nam quis repudiandae reprehenderit iusto, illo totam voluptatum exercitationem?</p>
+                </div>
             </div>
-            <p class="my-4 card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, adipisci quas architecto debitis tempore assumenda voluptatum, ipsam amet error delectus aperiam possimus ullam eius autem minima velit, nobis numquam! Dolorum.</p>
-            <p class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum quos ab libero debitis natus nemo vel? Itaque nam nostrum maiores facilis veritatis fugit quidem, provident a dolores aliquam minus.</p>
+            <h1 class="kishi">Kishisrestaurant at a glance</h1>
+            <div class="flex glance">
 
+        
+            <div class="flex my-4 card">
+                <p class="rounded bg-gold">1</p>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, adipisci quas architecto debitis tempore assumenda voluptatum, ipsam amet error delectus aperiam possimus ullam eius autem minima velit, nobis numquam! Dolorum.</p>
+                
+    
+            </div>
+            <div class="flex my-4 card">
+                <p class="rounded bg-gold">2</p>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, adipisci quas architecto debitis tempore assumenda voluptatum, ipsam amet error delectus aperiam possimus ullam eius autem minima velit, nobis numquam! Dolorum.</p>
+                
+    
+            </div>
+
+        </div>
             <div class="flex container food-container">
-                <img src="img/achu.jpeg" class="food" alt="">
+             
+
+                    <img src="img/achu.jpeg" class="food" alt="">
+             
                 <img src="img/achu1.jpeg" class="food" alt="">
                 <img src="img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" class="food" alt="">
                 <img src="img/eru2.jpeg" class="food" alt="">
@@ -72,93 +118,71 @@
                 <img src="img/achu.jpeg" class="food" alt="">
                 <img src="img/eru2.jpeg" class="food" alt="">
             </div>
-            <div class="my-4"></div>
 
-        </div>
       
     </section>
  
 
-    <!-- Footer -->
-    <footer class="footer"> 
+      <!-- Footer -->
+      <footer class="footer"> 
         <div class="top-footer flex-around">
-
+    
             <div class="flex col-3">
-                <!-- <div class="logo"> -->
-                    <img src="img/K.jpg" class="logo-image"  alt="kishisrestaurant-logo">
-                    <!-- </div> -->
-                    <div class="kishi">
-              <p>
-                Kishi's restaurant
-              </p>
+                <img src="img/K.jpg" class="logo-image"  alt="kishisrestaurant-logo">
+                <div class="kishi">
+                  <p>Kishi's restaurant</p>
+                </div>
+            </div>
+    
+            <div class="follow flex">
+                <p>Follow us on </p>
+                <div class="social-media">
+    
+                    <a href="#" ><img src="img/facebook.png" class="social-media-icons ss" alt=""></a>
+                    <a href="#" ><img src="img/instagram.png" class="social-media-icons ss" alt=""></a>
+                    <a href="#" ><img src="img/twitter.png" class="social-media-icons ss" alt=""></a>
+                    <a href="#" ><img src="img/youtube.png" class="social-media-icons ss" alt=""></a>
+            
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="middle-footer">
+          
+         <div>
+          <a href="#" class="foot-links">About</a>
+          <a href="#" class="foot-links">FAQs</a>
+          <a href="#" class="foot-links">Gallery</a>   
+        </div>
+        <div>
+        <div class="flex col-3">
+            <!-- <div class="logo"> -->
+                <img src="img/placeholder.png" class="social-media-icons"  alt="kishisrestaurant-logo">
+                <!-- </div> -->
+                <div class="flex">
+          <div>
+            Biyem-Assi, XXX. Yaounde, Cameroon🇨🇲️
             </div>
         </div>
-
-        <div class="follow flex">
-            <p>Follow us on </p>
-            <div class="social-media">
-
-                <a href="#" ><img src="img/facebook.png" class="social-media-icons ss" alt=""></a>
-                <a href="#" ><img src="img/instagram.png" class="social-media-icons ss" alt=""></a>
-                <a href="#" ><img src="img/twitter.png" class="social-media-icons ss" alt=""></a>
-                <a href="#" ><img src="img/youtube.png" class="social-media-icons ss" alt=""></a>
-        
-            </div>
-        </div>
-
-        </div>
-
-    <div class="middle-footer">
-      
-<div>
-
-    <a href="#" class="foot-links">About</a>
-        <a href="#" class="foot-links">FAQs</a>
-      
-            <a href="#" class="foot-links">Gallery</a>
-        
-</div>
-<div>
+    </div> 
+    
     <div class="flex col-3">
         <!-- <div class="logo"> -->
-            <img src="img/placeholder.png" class="social-media-icons"  alt="kishisrestaurant-logo">
+            <img src="img/whatsapp.png" class="social-media-icons" alt="">
             <!-- </div> -->
             <div class="flex">
       <div>
-        Biyem-Assi, XXX. Yaounde, Cameroon🇨🇲️
+        670061463 / 68954721
         </div>
-    </div>
-</div> 
-
-<div class="flex col-3">
-    <!-- <div class="logo"> -->
-        <img src="img/whatsapp.png" class="social-media-icons" alt="">
-        <!-- </div> -->
-        <div class="flex">
-  <div>
-    670061463 / 68954721
-    </div>
-</div>
-</div> 
-
-
-</div>
+      </div>
+      </div> 
     
-    </div>
+          </div>
+        
+     </div>
+        </footer>
 
-
-    </footer>
-    <script>
-        const width=document.querySelector('.width');
-        const container=document.getElementById('JS-cc');
-        // .offsetWidth;
-     
-        // console.log(container.offsetWidth)
-        container.addEventListener('click',function(){
-            width.textContent=container.offsetWidth;
-        });
-
-     
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

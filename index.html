@@ -27,7 +27,7 @@
         </div> 
        
 
-        <div class="nav ">
+        <div class="nav">
            
 
             <a href="index.html" class="nav-items">Home</a>
@@ -40,7 +40,12 @@
             <a href="" class="nav-items order-food">Order Food</a>
             <!-- <input type="checkbox" name="" id="check">
             <label for="check"class='checkbtn'> -->
-            <a href="#" id="menu-bar"><i class="fas fa-bars" id="check"></i></a>
+            <!-- <a href="#" id="menu-bar"><i class="fas fa-bars" id="check"></i></a> -->
+            <button id="menu-bar" class="hamburger">
+                <span class="hamburger-top"></span>                
+                <span class="hamburger-middle"></span>                
+                <span class="hamburger-bottom"></span>                
+            </button>
 
         </div>
     
@@ -49,12 +54,11 @@
     <!-- To view the navbar. It is normally hidden  -->
     <div class="view-navbar none">
         <ul>
-            <li><a href="#" class="nav-items">About</a></li>
-            <li><a href="#" class="nav-items">Our Menu</a></li>
-            <li><a href="#" class="nav-items">How it Works</a></li>
-           
+            <li><a href="index.html" class="nav-items">Home</a></li>
+            <li><a href="about.html" class="nav-items">About</a></li>
+            <li><a href="gallery.html" class="nav-items">Gallery</a></li>
+    
             <div class="order-box center">
-
                 <a href="" class="nav-items nav-order-food">Order Food</a>
             </div>
         </ul>
@@ -86,22 +90,22 @@
             <div class="menus card">
                 <h2 class="menu-heading">Eru & WaterFufu</h2>
                 <img src="img/eru2.jpeg" class="food-images" alt="eru">
-                <p class="price"><span>Price:</span>700FCFA </p>
+                <p class="price my-1"><span>Price:</span>1000 FCFA </p>
             </div>
             <div class="menus card">
                 <h2 class="menu-heading">Fried Rice</h2>
                 <img src="img/fried-rice2.jpeg" class="food-images" alt="fried rice">
-                <p class="price"><span>Price:</span>700FCFA </p>
+                <p class="price my-1"><span>Price:</span>1000 FCFA </p>
             </div>
             <div class="menus card">
                 <h2 class="menu-heading">Achu</h2>
                 <img src="img/achu.jpeg" class="food-images" alt="achu">
-                <p class="price"><span>Price:</span>700FCFA </p>
+                <p class="price my-1"><span>Price:</span>1000 FCFA </p>
             </div>
             <div class="menus card">
                 <h2 class="menu-heading">Kati-kati</h2>
                 <img src="img/kati-kati.jpeg" class="food-images" alt="Kati-kati">
-                <p class="price"><span>Price:</span>700FCFA </p>
+                <p class="price my-1"><span>Price:</span>1000 FCFA </p>
             </div>
 
         </div>
@@ -356,17 +360,6 @@
 
 
     </footer>
-    <script>
-        const width=document.querySelector('.width');
-        const container=document.getElementById('JS-cc');
-        // .offsetWidth;
-     
-        // console.log(container.offsetWidth)
-        container.addEventListener('click',function(){
-            width.textContent=container.offsetWidth;
-        });
-
-     
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

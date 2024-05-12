@@ -10,6 +10,7 @@
     --light-color:#f4f4f4;
     --success-color:#5cb85c;
     --error-color:#d9534f;
+    --gold-color:gold;
 }
 *{
     padding: 0;
@@ -85,9 +86,48 @@ img{
 }
 #menu-bar{
     font-size: 30px;
-    display: none;
+ border: none;
+ background: transparent;
+ display: none;
 }
-
+.hamburger{
+    cursor:pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+position: absolute;
+top: 0;
+left: 0;
+width:24px;
+height:2px;
+background-color: black;
+transform: rotate(0);
+transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.open .hamburger-middle{
+    opacity: 0;
+}
 /* LANDING SECTION*/
 .landing{
     width: 100%;
@@ -145,6 +185,14 @@ img{
     height: 200px; 
     width: 100%;
     border-radius: 10px;
+}
+.price{
+    font-weight: 600;
+}
+.price span{
+    color: rgb(255, 102, 0);
+    margin-right: 5px;
+ 
 }
 /* why-kishisrestaurant */
 .why-kishisrestaurant{
@@ -256,11 +304,12 @@ margin-right: 10px;
 .star{
     width: 20px;
 }
-
+.none{
+    display: none;
+}
 .view-navbar{
     height: 100vh;
     width: 100%;
-    display: none;
     
 }
 .view-navbar ul{
@@ -284,27 +333,43 @@ margin-right: 10px;
 
 
 /* ABOUT PAGE */
-.about .image-about *{
-    margin: auto;
-}
+
 .about .image-about img{
-     height:500px ;
-     width: 400px;
+     /* width: 400px; */
 
 }
 .about .image-about{
-    width: 500px;
-    margin: auto;
+    width: 260px;
 }
 .about .food{
     height: 220px;
     width: 300px;
 }
+/* .about>:first-child{
+        height: 220px;
+    width: 300px;
+} */
+.about .food:hover{
+    transform: scale(0.98);
+    cursor:pointer;
+}
 .about .food-container{
     flex-wrap: wrap;
     
 }
-
+.description {
+max-width: 520px;
+}
+.description-heading{
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* text-align: center; */
+    color: rgb(255, 102, 0);
+    margin-bottom: 5px;;
+}
+.glance .flex{
+    align-items: start;
+}
 /* GALLERY PAGE */
 
 .food-gallery hr{
@@ -312,7 +377,6 @@ margin-right: 10px;
 }
 .food-gallery .food-view{
 position:relative;
-/* padding:20px; */
 overflow: auto;
 
 }
@@ -339,7 +403,9 @@ overflow: auto;
     .nav,.order-food{
         display: none;
     }
-
+    .about .gap-3{
+        flex-direction: column;
+    }
 }
 @media (max-width:800px) {
      
@@ -374,13 +440,16 @@ overflow: auto;
 
         }
         .review-text{
-            width: 500px;
+            max-width: 500px;
         }
         .footer{
             font-size: 0.9rem;
         }
         .order-food{
             width: 80px;
+        }
+        .glance{
+            display: block;
         }
 
     }

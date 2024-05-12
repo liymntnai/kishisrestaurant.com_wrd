@@ -17,14 +17,16 @@
     <header class="header">
         
         <div class="flex logo-box">
+            <!-- <div class="logo"> -->
             <img src="img/K.jpg" class="logo-image"  alt="kishisrestaurant-logo">
+            <!-- </div> -->
             <div class="kishi flex">
               <p>Kishi's restaurant</p>
             </div>
         </div> 
        
 
-        <div class="nav ">
+        <div class="nav">
            
 
             <a href="index.html" class="nav-items">Home</a>
@@ -37,7 +39,12 @@
             <a href="" class="nav-items order-food">Order Food</a>
             <!-- <input type="checkbox" name="" id="check">
             <label for="check"class='checkbtn'> -->
-            <a href="#" id="menu-bar"><i class="fas fa-bars" id="check"></i></a>
+            <!-- <a href="#" id="menu-bar"><i class="fas fa-bars" id="check"></i></a> -->
+            <button id="menu-bar" class="hamburger">
+                <span class="hamburger-top"></span>                
+                <span class="hamburger-middle"></span>                
+                <span class="hamburger-bottom"></span>                
+            </button>
 
         </div>
     
@@ -46,12 +53,11 @@
     <!-- To view the navbar. It is normally hidden  -->
     <div class="view-navbar none">
         <ul>
-            <li><a href="#" class="nav-items">About</a></li>
-            <li><a href="#" class="nav-items">Our Menu</a></li>
-            <li><a href="#" class="nav-items">How it Works</a></li>
-           
+            <li><a href="index.html" class="nav-items">Home</a></li>
+            <li><a href="about.html" class="nav-items">About</a></li>
+            <li><a href="gallery.html" class="nav-items">Gallery</a></li>
+    
             <div class="order-box center">
-
                 <a href="" class="nav-items nav-order-food">Order Food</a>
             </div>
         </ul>
@@ -120,19 +126,16 @@
                 </div>
             </div>
     
-            </div>
+        </div>
     
         <div class="middle-footer">
           
-    <div>
-    
-        <a href="#" class="foot-links">About</a>
-            <a href="#" class="foot-links">FAQs</a>
-          
-                <a href="#" class="foot-links">Gallery</a>
-            
-    </div>
-    <div>
+         <div>
+          <a href="#" class="foot-links">About</a>
+          <a href="#" class="foot-links">FAQs</a>
+          <a href="#" class="foot-links">Gallery</a>   
+        </div>
+        <div>
         <div class="flex col-3">
             <!-- <div class="logo"> -->
                 <img src="img/placeholder.png" class="social-media-icons"  alt="kishisrestaurant-logo">
@@ -152,17 +155,14 @@
       <div>
         670061463 / 68954721
         </div>
-    </div>
-    </div> 
+      </div>
+      </div> 
     
-    
-    </div>
+          </div>
         
-        </div>
-    
-    
+     </div>
         </footer>
 
-
+        <script src="script.js"></script>
 </body>
 </html>
