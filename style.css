@@ -132,7 +132,8 @@ transition: all 0.5s;
 .landing{
     width: 100%;
     /* background-image: url('img/white-hat-chef.jpg'); */
-    background-image: url('img/black-chef.jpg');
+    /*background-image: url('img/black-chef.jpg');*/
+    background-image: url('img/annie-spratt-HW9JSNiP90o-unsplash-crop (2).jpg');
     background-color: #984e4e;
     height:80vh;
     background-position: center;
